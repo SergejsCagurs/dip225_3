@@ -39,7 +39,7 @@ price_per_kWh = float(text2[pos1+1:pos2-7].rstrip().replace(",", "."))
 
 per_month, per_year = per.split('.')
 
-with open('noedpool', 'rt') as f:
+with open('noedpool.csv', 'rt') as f:
     next(f)
     for line in f:
         row = line.rstrip().split(",")

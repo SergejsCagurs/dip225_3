@@ -3,9 +3,9 @@ import os
 
 data = []
 
-file_invoice = imput()
+file_invoice = input()
 
-if not os.path.isfile(dile_invoice):
+if not os.path.isfile(file_invoice):
     print("0")
     exit()
 
@@ -55,7 +55,7 @@ def average(data):
     return average_price
 
 def overpay(average_price, consumption):
-    difference = price_per_kWh - acerage_price
+    difference = price_per_kWh - average_price
     overpayment = consumption * difference
     return round(overpayment, 1)
 
